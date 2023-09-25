@@ -8,7 +8,7 @@ function App() {
   return (
     <section className="">
       <Header />
-      <section className="flex flex-col  justify-center items-center space-x-4">
+      <section className="flex flex-col  justify-center items-center ">
         <Auth />
         <Counter />
       </section>

@@ -5,8 +5,8 @@ import { counterActions } from "../store/Index";
 import Button from "./Button/Button";
 
 export default function Counter() {
-  const counter = useSelector((state) => state.counter);
-  const show = useSelector((state) => state.toggle);
+  const counter = useSelector((state) => state.counter.counter);
+  const show = useSelector((state) => state.counter.toggle);
 
   const dispatch = useDispatch();
 
@@ -29,7 +29,7 @@ export default function Counter() {
 
   return (
     <>
-      <main className="bg-violet-400 md:h-[30rem] rounded-xl md:w-[50%] border-2 ">
+      <main className="bg-violet-400 md:h-[30rem] rounded-xl md:w-[50%] border-2 my-4">
         <h1 className="  md:text-3xl my-4 font-bold text-center ">
           REDUX COUNTER
         </h1>
