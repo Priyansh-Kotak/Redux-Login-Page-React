@@ -14,6 +14,10 @@ export default function NavbarWithDropdown() {
     dispatch(underAuthActions.underAuthActions());
     // dispatch(authActions.login());
   };
+
+  const LogoutHandler = () => {
+    dispatch(authActions.logout());
+  };
   return (
     <Navbar fluid rounded>
       <Navbar.Brand href="#">
@@ -51,7 +55,7 @@ export default function NavbarWithDropdown() {
               <li>Settings</li>
               <li>Earnings</li>
               <Dropdown.Divider />
-              <li>Sign out</li>
+              <button onClick={LogoutHandler}>Sign out</button>
             </ul>
           </Dropdown>
           <Navbar.Toggle />

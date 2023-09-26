@@ -29,7 +29,7 @@ export default function Counter() {
 
   return (
     <>
-      <main className="bg-violet-400 md:h-[30rem] rounded-xl md:w-[50%] border-2 my-4">
+      <main className="bg-violet-400 md:h-[3 0rem] rounded-xl md:w-[50%] border-2 my-4">
         <h1 className="  md:text-3xl my-4 font-bold text-center ">
           REDUX COUNTER
         </h1>
